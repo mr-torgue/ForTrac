@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EA8888"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    <!-- app:popupTheme="@style/ThemeOverlay.AppCompat.Light" -->
+
+    <Button
+        android:id="@+id/products_explore_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/browse_products" />
+
+    <Button
+        android:id="@+id/create_product_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/new_product" />
+
+    <TextView
+        android:id="@+id/scan_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/scan_an_nfc_tag"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        android:translationY="150sp" />
+
+</LinearLayout>
